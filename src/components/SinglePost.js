@@ -20,15 +20,15 @@ export default function SinglePost () {
             title,
             _id,
             slug,
-            mainImage{
-                asset->{
+            mainImage {
+                asset -> {
                     _id,
                     url
                 }
             },
             body,
-            "name": author->name,
-            "authorImage": author->image
+            "name": author -> name,
+            "authorImage": author -> image
         }`)
         .then( (data) => setSinglePost(data[0]))
         .catch(console.error);
