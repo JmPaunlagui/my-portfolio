@@ -24,7 +24,7 @@ export default function SinglePost () {
                 asset -> {
                     _id,
                     url
-                }
+                },
             },
             body,
             "name": author -> name,
